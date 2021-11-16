@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  color: rgb(84, 228, 65);
+  font-family: "Oswald", sans-serif;
+}
+a {
+  color: rgb(84, 228, 65);
+  text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-logo{
+    width: 50px;
+}
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid rgb(84, 228, 65);
+}
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
