@@ -106,3 +106,6 @@ dist
 #database
 
 ./webfinal/db.sqlite3
+
+#secret_key
+./webfinal/settings.py
