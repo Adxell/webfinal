@@ -5,7 +5,18 @@ from django.db.models.base import Model
 
 
 class Personas(models.Model):
-    name=models.CharField(max_length=40)
-    email=models.EmailField(max_length=50, unique=True)
-    age=models.DateField(max_length=50)
-    
+    nombre=models.CharField(max_length=40)
+    apellido=models.CharField(max_length=40)
+    correo=models.EmailField(max_length=50, unique=True)
+    fecha_nacimiento=models.DateField(max_length=50)
+    def __str__(self):
+        return self.nombre+"-"+self.nombre
+
+class Reporte(models.Model):
+    fecha =models.DateField(max_length=60)
+    persona=models.ForeignKey(Personas, on_delete=models.CASCADE, null=True, blank=True)
+    def __str__(self):
+        return self.fecha
+
+
+
