@@ -61,6 +61,14 @@ ul{
     align-items: center;
     justify-content: flex-end;
 }
+.contenido-principal p{
+    margin-left: 20px;
+}
+
+.contenido-principal p,
+.contenido-principal h2{
+    margin-bottom: 10px;
+}
 
 .btn{
    cursor: pointer;
