@@ -16,7 +16,8 @@
 <body>
     <div class="container">
         <nav class="nav-main">
-            <img src="{% static '/img/logo.png' %}" class="nav-logo" alt="logo">
+            <img src="{% static '/img/logo.png' %}" class="nav-logo" id="logo" alt="logo">
+            <label  class="label-logo" for="logo">Aguas Puras</label>
             <ul class="nav-menu">
                 <li>
                     <a href="/">Home</a>
@@ -34,11 +35,9 @@
             </ul>
         </nav>
         <header class="contenido-principal">
-            <h2>
-                Agua
-            </h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga ex aut maxime nam rerum hic quo ipsam libero sed quod blanditiis repellendus provident ipsa, reiciendis quibusdam repudiandae saepe laboriosam.</p>
-            <a href="#" class="btn">ver <i class="fas fa-angle-double-right"></i></a>
+            <span> <strong>Agua mineral natural de mineralización muy débil</strong> </span>
+            <p>Indicada para la preparación de alimentos infantiles y dietas bajas en sodio</p>
+            <a href="#" class="btn"><i class="fas fa-angle-down"></i></a>
         </header>
         <div class="news-cards">
             <div>
@@ -122,7 +121,7 @@
             </div>
         </div>
         <section class="social">
-            <p>Seguir Agua</p>
+            <p>Seguir Aguas Puras</p>
             <div class="links">
                 <a href="#">
                     <i class="fab fa-facebook-f"></i>
@@ -136,6 +135,96 @@
             </div>
         </section>
     </div>
+    <div class="footer-link">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">Title</a>
+                </li>
+                <li>
+                    <a href="#">Title1</a>
+                </li>
+                <li>
+                    <a href="#">Title1</a>
+                </li>
+                <li>
+                    <a href="#">Title1</a>
+                </li>
+                <li>
+                    <a href="#">Title1</a>
+                </li>
+                <li>
+                    <a href="#">Title1</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+                <li>
+                    <a href="#">Title2</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Title</a>
+                </li>
+                <li>
+                    <a href="#">Title3</a>
+                </li>
+                <li>
+                    <a href="#">Title3</a>
+                </li>
+                <li>
+                    <a href="#">Title3</a>
+                </li>
+                <li>
+                    <a href="#">Title3</a>
+                </li>
+                <li>
+                    <a href="#">Title3</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Title</a>
+                </li>
+                <li>
+                    <a href="#">Title4</a>
+                </li>
+                <li>
+                    <a href="#">Title4</a>
+                </li>
+                <li>
+                    <a href="#">Title4</a>
+                </li>
+                <li>
+                    <a href="#">Title4</a>
+                </li>
+                <li>
+                    <a href="#">Title4</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>&copy;Aguas Puras Copyright</h3>
+    </footer>
     {% block body %}
     
     {% endblock %}
