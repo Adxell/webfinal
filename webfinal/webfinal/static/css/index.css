@@ -60,6 +60,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 10px;
 }
 .contenido-principal p{
     margin-left: 20px;
@@ -83,4 +84,34 @@ ul{
     background: rgb(84, 228, 65);
     color:black;
 }
+
+.news-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: justify;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.news-cards img{
+    width: 100%;
+    height: 180px;
+}
+.news-cards h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a{
+    padding: 10px 0;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover{
+    text-decoration: underline;
+}
+
+
 
