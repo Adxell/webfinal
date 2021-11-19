@@ -12,7 +12,7 @@ label {
   color: #00a6e1;
 }
 a {
-  color: #0f0f10;
+  color: #00a6e1;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -44,9 +44,13 @@ ul {
 }
 .nav-main ul {
   display: flex;
+  justify-content: flex-end;
 }
 
 .nav-main ul li {
+  padding: 10px;
+}
+.nav-main ul li a{
   padding: 10px;
 }
 
@@ -191,6 +195,12 @@ ul {
   text-align: center;
   padding-bottom: 20px;
 }
+@media (min-width:700px) {
+  .menu-btn{
+    display: none;
+  }
+}
+
 
 @media (max-width: 800px) {
   .news-cards {
@@ -198,9 +208,37 @@ ul {
   }
 }
 
+
 @media (max-width: 700px) {
+  .nav-main ul.nav-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    padding: 30px;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .nav-main ul.nav-menu.show{
+    width: 100%;
+    margin-top: 60px;
+    transform: translateX(-20px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav-main ul.nav-menu li{
+    padding: 20px;
+    font-size: 14px;
+  }
   .news-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .news-cards img{
+    height: 220px;
   }
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -210,7 +248,16 @@ ul {
     height: 100vh;
     text-align: center;
   }
+  .menu-btn{
+  position: absolute;
+  cursor: pointer;
+  top: 12px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.2rem;
 }
+}
+
 @media (max-width: 569px) {
   .news-cards {
     grid-template-columns: repeat(1, 1fr);
