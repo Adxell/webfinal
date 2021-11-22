@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+    <link rel="stylesheet" href='{% static "css/style1.css" %}'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Agua</title>
-    
 </head>
 <body>
     <div class="menu-btn">
@@ -28,6 +27,9 @@
                     <li>
                         <a href="#">about</a>
                     </li>
+                    <li>
+                        <a href="#">{{nombre}}</a>
+                    </li>
                 </ul>
         </nav>
         <header class="contenido-principal">
@@ -37,197 +39,71 @@
         </header>
         <div class="news-cards">
             <div>
-                <img src="{% static 'img/new1.jpg'%}" alt="new1">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
+                <img src="{% static 'img/img1.png'%}" alt="new1">
+                <h3>Huella ecológicas: ¿Qué es y por qué es tan importante saber de ella?</h3>
+                <p>Es fácil constatar nuestra responsabilidad en la contaminación del Planeta y en el agotamiento constante y progresivo de
+                los recursos naturales. Este indicador tiene como objetivo, por tanto, evaluar el impacto determinado de un estilo de
+                vida.</p>
+                <a href="https://www.ecointeligencia.com/2011/03/que-es-la-huella-ecologica/">leer Más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="{% static 'img/new2.jpg'%}" alt="new2">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
+                <img src="{% static 'img/img2.jpeg'%}" alt="new2">
+                <h3>La agricultura y su aporte a la escasez</h3>
+                <p>La agricultura moderna es responsable del vertido de grandes cantidades de agroquímicos, materia orgánica, sedimentos y
+                sales en los cuerpos de agua, dice el informe.</p>
+                <a href="https://www.fao.org/in-action/agronoticias/detail/es/c/1141955/">leer <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="{% static 'img/new3.jpg'%}" alt="new3">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
+                <img src="{% static 'img/img4.jpeg'%}" alt="new3">
+                <h3>¡La importancia de la degradación de desechos tóxicos</h3>
+                <p>Enviar estos desechos a compañías externas de tratamiento es extremadamente caro y sólo transfiere el problema de manos.
+                Por otra parte, algunos compuestos orgánicos son tóxicos para las bacterias, lo que hace inoperable un tratamiento
+                biológico.</p>
+                <a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0188-49992016000100119">leer <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="{% static 'img/new3.jpg'%}" alt="new3">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
+                <img src="{% static 'img/img5.jpg'%}" alt="new3">
+                <h3>La regla y no de tres. La regla de las tres R del reciclaje</h3>
+                <p>La denominada Regla de las Tres Erres pretende estimular la participación ciudadana, desde el ámbito del hogar, en la
+                lucha contra la degradación del planeta mediante la reducción, la reutilización y el reciclaje de los productos que
+                consumimos.</p>
+                <a href="https://www.laspalmasgc.es/es/areas-tematicas/limpieza-y-reciclaje/separacion-y-reciclaje/la-regla-de-las-3-erres/">leer Más<i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="{% static 'img/new3.jpg'%}" alt="new3">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
+                <img src="{% static 'img/img6.jpeg'%}" alt="new3">
+                <h3>Qué podemos hacer para no despreciar alimentos</h3>
+                <p>LLa FAO calcula que el desperdicio de comida es responsable del 8 % de las emisiones mundiales de gases de efecto
+                invernadero, el 30 % de la tierra agrícola se destina a cultivar alimentos que nunca se consumirán y un 21 % de agua
+                dulce se desecha para su producción.</p>
+                <a href="https://www.sostenibilidad.com/vida-sostenible/desperdicio-de-comida-que-es-y-como-evitarlo/?_adin=02021864894">leer <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="{% static 'img/new4.jpg'%}" alt="new4">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new4.jpg'%}" alt="new4">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new3.jpg'%}" alt="new3">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new2.jpg'%}" alt="new2">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new1.jpg'%}" alt="new1">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new1.jpg'%}" alt="new1">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new2.jpg'%}" alt="new2">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new3.jpg'%}" alt="new3">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="{% static 'img/new4.jpg'%}" alt="new4">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae quo a iure consectetur suscipit dolores
-                    possimus nisi odit quam harum amet, officia unde ducimus ullam quae porro, autem nihil!</p>
-                <a href="#">leer <i class="fas fa-angle-double-right"></i></a>
+                <img src="{% static 'img/img7.jpeg'%}" alt="new4">
+                <h3>Una mejora en los recursos usados</h3>
+                <p>Una mejor forma de usar nuestros recursos nos permitirá reducir la huella ecológica y a su vez poder llegar a muchas
+                personas. Se calcula que más del 10% de la población mundial sigue viviendo en la pobreza extrema, sin poder satisfacer
+                ni siquiera sus necesidades más básicas.</p>
+                <a href="https://www.unep.org/es/node/1392">leer <i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
-        <section class="social">
-            <p>Seguir Aguas Puras</p>
-            <div class="links">
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </section>
+     
     </div>
     <div class="footer-link">
         <div class="footer-container">
-            <ul>
-                <li>
-                    <a href="#">Title</a>
-                </li>
-                <li>
-                    <a href="#">Title1</a>
-                </li>
-                <li>
-                    <a href="#">Title1</a>
-                </li>
-                <li>
-                    <a href="#">Title1</a>
-                </li>
-                <li>
-                    <a href="#">Title1</a>
-                </li>
-                <li>
-                    <a href="#">Title1</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-                <li>
-                    <a href="#">Title2</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">Title</a>
-                </li>
-                <li>
-                    <a href="#">Title3</a>
-                </li>
-                <li>
-                    <a href="#">Title3</a>
-                </li>
-                <li>
-                    <a href="#">Title3</a>
-                </li>
-                <li>
-                    <a href="#">Title3</a>
-                </li>
-                <li>
-                    <a href="#">Title3</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">Title</a>
-                </li>
-                <li>
-                    <a href="#">Title4</a>
-                </li>
-                <li>
-                    <a href="#">Title4</a>
-                </li>
-                <li>
-                    <a href="#">Title4</a>
-                </li>
-                <li>
-                    <a href="#">Title4</a>
-                </li>
-                <li>
-                    <a href="#">Title4</a>
-                </li>
-            </ul>
+            <section class="social">
+                <p>Seguir Aguas Puras</p>
+                <div class="links">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
         </div>
     </div>
     <footer class="footer">
