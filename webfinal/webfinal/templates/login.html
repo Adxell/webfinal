@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/login.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <img src="{% static '/img/logo.png' %}" class="nav-logo" id="logo" alt="logo">
+        <label class="label-logo" for="logo">Aguas Puras</label>
+    </div>
+    <div class="formulariodiv"> 
+        <form class="formulario" autocomplete="off" action="/" method="post">
+            <h4>Inicio de secion</h4>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+            <input class="controls" type="text" name="apellido" id="nombre" placeholder="ingrese su apellido">
+            <input class="controls" type="email" name="correo" id="nombre" placeholder="ingrese su correo">
+            <input class="controls" type="date" name="fecha" id="fecha" placeholder="fecha de nacimiento">
+            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+            <input class="btn" type="submit" value="Login">
+            <p><a href="#">Ya tengo una cuenta?</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>

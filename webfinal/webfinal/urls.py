@@ -17,11 +17,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-from personas.views import index, adminS
+from personas.views import index, adminS,login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', index),
     path('adminS/', adminS),
+    path('login/', login),
     url(r'^$', index),
 ]

@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="{% static 'css/admin.css'%}">
+    <link rel="stylesheet" href="{% static 'css/admin2.css'%}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
 </head>
 <body>
-    <nav class="nav-admin">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="main">
+        <div class="nav-admin">
+            <ul class="menu">
+                <li class="show">
+                    <span>Reportes</span>
+                    <ul class="hidden">
+                        <li>
+                            <a href="#">Reportes</a>
+                        </li>
+                        <li >
+                            <a href="#">ReportesPdf</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <!--Codigo jinja----->
+            <h1>Hola</h1>
+            <img src="{% static 'img/logo.png'%}" alt="img">
+        </div>
+    </div>
+    <script src="{% static 'js/admin.js'%}"></script>
 </body>
 </html>

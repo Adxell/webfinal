@@ -7,3 +7,6 @@ def index(request):
 
 def adminS(request):
     return render(request, 'admin.html')
+
+def login(request):
+    return render(request, 'login.html')

@@ -195,6 +195,7 @@ ul {
   text-align: center;
   padding-bottom: 20px;
 }
+
 @media (min-width:700px) {
   .menu-btn{
     display: none;
