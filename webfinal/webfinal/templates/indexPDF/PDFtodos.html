@@ -1,0 +1,20 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>NOMBRES</th>
+            <th>APELLIDO</th>
+            <th>CORREO</th>
+            <th>FECHA DE NACIMIENTO</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in personas %}
+        <tr>
+                <td> {{row.nombre}} </td>
+                <td> {{row.apellido}}</td>
+                <td> {{row.correo}} </td>
+                <td> {{row.fecha_nacimiento}} </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

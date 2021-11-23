@@ -1,0 +1,33 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>NOMBRES</th>
+            <th>CORREO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> {{personas.nombre}} {{personas.apellido}}</td>
+            <td> {{personas.correo}} </td>
+        </tr>
+
+
+    </tbody>
+</table>
+<br>
+<table border="1">
+    <thead>
+        <tr>
+            <th>FECHA DE INICIO DE SESION</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for row in reportes %}
+        <tr>
+            <td> {{row.fecha}}</td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
