@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='{% static "css/reportes.css" %}'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="icon" href="{% static 'img/logo.png'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="nav-main">
+        <img src="{% static '/img/logo.png' %}" class="nav-logo" id="logo" alt="logo">
+        <label class="label-logo" for="logo">Aguas Puras</label>
+        <ul class="nav-menu">
+        </ul>
+    </nav>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>CORREO</th>
+                <th>FECHA</th>
+                <th>ACCIÓN</th>
+            </tr>
+        </thead>
+        {% if msg %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Ok!</strong> {{msg}}.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endif %}
+        <tbody>
+    
+            {% for row in personas %}
+    
+            <tr>
+                <td> {{row.nombre}} </td>
+                <td> {{row.apellido}}</td>
+                <td> {{row.correo}} </td>
+                <td> {{row.fecha_nacimiento}} </td>
+                <td>
+                    <a href="/editar/{{row.id}}" title="Editar">
+                        <button type="button" class="btn btn-info">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:24px"></i>
+                        </button>
+                    </a>
+                    <a href="/indexPDF/PDF/{{row.id}}" title="Imprimir">
+                        <button type="button" class="btn btn-danger">
+                            <i class="fa fa-print" aria-hidden="true" style="font-size:24px"></i>
+                        </button>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>CORREO</th>
+                <th>FECHA</th>
+                <th>ACCIÓN</th>
+            </tr>
+        </tfoot>
+    </table>
+    <a class="btn btn-danger" href="/indexPDF/PDFtodos/"><i class="fa fa-print" aria-hidden="true" style="font-size:24px; margin-right: 5px;"></i>Imprimir general</a>
+</body>
+</html>

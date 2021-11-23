@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="{% static 'css/login.css'%}">
+    <link rel="stylesheet" href="{% static 'css/login1.css'%}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro</title>
+    <link rel="icon" href="{% static 'img/logo.png'%}">
 
 </head>
 
@@ -16,20 +17,24 @@
         <img src="{% static '/img/logo.png' %}" class="nav-logo" id="logo" alt="logo">
         <label class="label-logo" for="logo">Aguas Puras</label>
     </div>
+   
     <div class="formulariodiv">
-        <form class="formulario" autocomplete="off" action="" method="post">
+        <form class="formulario" autocomplete="off" method="post">
             {% csrf_token %}
-            <h4>Inicio de secion</h4>
-            <input class="controls" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
-            <input class="controls" type="text" name="apellido" id="nombre" placeholder="ingrese su apellido">
-            <input class="controls" type="email" name="correo" id="nombre" placeholder="ingrese su correo">
-            <input class="controls" type="date" name="fecha" id="fecha" placeholder="fecha de nacimiento">
-            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
-            <input class="btn" type="submit" value="Login">
-            <p><a href="#">¿Ya tengo una cuenta?</a></p>
+            <h4>Inicio de sesión</h4>
+            <label for="nombre" class="lnombre">Ingrese su nombre</label>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+            <label for="apellido" class="lapellido">Ingrese su apellido</label>
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+            <label for="correo" class="lcorreo">Ingrese su correo</label>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+            <label for="fecha" class="lfecha">Ingresar fecha de nacimiento</label>
+            <input class="controls" type="date" name="fecha" id="fecha" style="color: #fff;">
+            <input class="btn" type="submit" value="Registro">
+            <p><a href="/">¿Ya tengo una cuenta?</a></p>
         </form>
     </div>
-
+    <script src="{% static 'js/login.js'%}"></script>
 </body>
 
 </html>
