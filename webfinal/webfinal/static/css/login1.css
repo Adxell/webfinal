@@ -12,7 +12,7 @@ body{
     background: #24303c;
     padding: 30px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -21,7 +21,7 @@ body{
 
 .formulario h4{
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .controls{
@@ -54,6 +54,12 @@ body{
 .formulario label{
     display: none;
 }
+.formulario .show{
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'calibri';
+    transition: transform 0.5s ease-in;
+}
 .formulario .btn{
     width: 100%;
     background: #1f53c5;
@@ -81,4 +87,16 @@ body{
     line-height: 300%;
     font-family: 'calibri';
     color: white;
+}
+.msg{
+    margin: auto;
+}
+a{
+    width: 100%;
+    text-decoration: none;
+}
+@media (max-width:560px){
+    .formulario{
+        width: 80vw;
+    }
 }
